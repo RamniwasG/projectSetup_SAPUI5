@@ -1,0 +1,16 @@
+<core:View
+	controllerName="pbc.sap.ui.sapTest.test"
+	xmlns="sap.suite.ui.commons"
+	xmlns:m="sap.m"
+	xmlns:n="sap.tnt"
+	xmlns:u="sap.ui.unified"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+  	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc">
+	<m:Panel enabled="false">
+		<l:Grid defaultSpan="L4 M12 S12">
+			
+		</l:Grid>
+	</m:Panel>
+</core:View>

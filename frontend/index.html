@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sapui5 project setup</title>
+	<style>
+		.alignTitle {
+			text-align: center;
+		}
+	</style>
+	<script id="sap-ui-bootstrap"
+		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_bluecrystal"
+		data-sap-ui-xx-bindingSyntax="complex"
+		data-sap-ui-preload="async"
+		data-sap-ui-compatVersion="edge" 
+		data-sap-ui-resourceroots='{"pbc.sap.ui.sapTest": "/"}'>
+	</script>
+	<script>
+		sap.ui.getCore().attachInit(function(){
+			new sap.m.App({
+				pages: [
+					new sap.m.Page({
+						title: "Sap Project Setup",
+						enableScrolling: true,
+						content: [new sap.ui.core.ComponentContainer({
+							name: "pbc.sap.ui.sapTest"
+						})]
+					})
+				]
+			}).placeAt("content");
+		});
+	</script>
+</head>
+	<body class="sapUiBody" id="content" role="applicaton"></body>
+</html>
