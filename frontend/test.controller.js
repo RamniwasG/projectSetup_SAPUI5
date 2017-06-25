@@ -8,6 +8,14 @@ sap.ui.define([
 		return Controller.extend('pbc.sap.ui.sapTest.test',{
 			onInit:function() {
 				console.log("controller initialized");
+			},
+
+			onPressReject: function(event) {
+				console.log("onPress called");
+			},
+
+			onPressDefault: function(event) {
+				console.log("onPress called");
 			}
 		}); 
 	});

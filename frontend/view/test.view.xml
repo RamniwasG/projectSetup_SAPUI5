@@ -9,8 +9,17 @@
   	xmlns:f="sap.ui.layout.form"
 	xmlns:mvc="sap.ui.core.mvc">
 	<m:Panel enabled="false">
-		<l:Grid defaultSpan="L4 M12 S12">
-			
+		<l:Grid defaultSpan="L12 M12 S12">
+			<l:VerticalLayout class="sapUiSmallMargin" >
+				<m:Label text="Enter your email:">
+				</m:Label>
+				<m:Input id="firstname" required="true">
+				</m:Input>
+				<l:HorizontalLayout class="sapUiSmallMargin" >
+					<m:Button text="Default" press="onPressDefault"></m:Button>
+					<m:Button type="Reject" text="Reject" press="onPressReject"></m:Button>
+				</l:HorizontalLayout>
+		</l:VerticalLayout>
 		</l:Grid>
 	</m:Panel>
 </core:View>

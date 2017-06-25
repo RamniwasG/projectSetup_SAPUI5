@@ -16,7 +16,7 @@ var app = express();
 findParentDir(__dirname, 'backend', function (err, dir) {  
     path = dir;
     console.log(path);
-    app.use(express.static(path + 'xmlfragmentApp'));
+    app.use(express.static(path + 'frontend'));
     //console.log(path + 'apprflow');
 });
 
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({'extended':'true'}));
 app.use(bodyParser.json());                                    
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
 app.get('/', function (req, res) {
-  res.sendFile(path+'/xmlfragmentApp/index.html');
+  res.sendFile(path+'/frontend/index.html');
 });
 
 app.listen(3000, function () {
